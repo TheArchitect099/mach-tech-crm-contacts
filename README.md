@@ -50,6 +50,9 @@ Junior frontend test assignment for **MACH TECH**
 
 https://thearchitect099.github.io/mach-tech-crm-contacts/
 
+> GitHub Pages: **Settings → Pages → Deploy from a branch → `main` / `/docs`**  
+> (or Source = **GitHub Actions** after the deploy workflow succeeds)
+
 ## How to run
 
 ```bash
