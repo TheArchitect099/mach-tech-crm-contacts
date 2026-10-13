@@ -46,6 +46,10 @@ Junior frontend test assignment for **MACH TECH**
 - [x] AI tools + design decisions documented
 - [x] Synthetic data only
 
+## Live demo
+
+https://thearchitect099.github.io/mach-tech-crm-contacts/
+
 ## How to run
 
 ```bash
