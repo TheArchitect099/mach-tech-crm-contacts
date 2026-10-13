@@ -7,7 +7,7 @@ Adaptive CRM contacts table built with React (junior frontend test assignment fo
 - React 19
 - TypeScript
 - Vite
-- Tailwind CSS 4
+- TailwindCSS 4.3
 - pnpm
 
 ## Features
