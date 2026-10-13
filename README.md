@@ -1,6 +1,27 @@
 # MACH TECH CRM — Contacts
 
-Adaptive CRM contacts table built with React (junior frontend test assignment for MACH TECH).
+Adaptive CRM contacts table built with React  
+Junior frontend test assignment for **MACH TECH**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/pnpm-ready-F69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Search-ready-0F172A?style=flat-square" alt="Search" />
+  <img src="https://img.shields.io/badge/Edit_form-ready-0F172A?style=flat-square" alt="Edit form" />
+  <img src="https://img.shields.io/badge/Validation-ready-0F172A?style=flat-square" alt="Validation" />
+  <img src="https://img.shields.io/badge/Loading%20%2F%20Empty-ready-0F172A?style=flat-square" alt="Loading Empty" />
+  <img src="https://img.shields.io/badge/Responsive-ready-0F172A?style=flat-square" alt="Responsive" />
+</p>
+
+## Preview
+
+![MACH TECH CRM Contacts screenshot](./docs/preview.png)
 
 ## Stack
 
@@ -17,8 +38,19 @@ Adaptive CRM contacts table built with React (junior frontend test assignment fo
 - Validation for required fields and email
 - Loading state (Loader)
 - Empty state (EmptyState) when nothing is found
-- Responsive layout (mobile / tablet / desktop)
+- Responsive layout (mobile cards / desktop table)
 - Synthetic demo data (not real people)
+
+## Assignment checklist
+
+- [x] Adaptive contacts table (React)
+- [x] Search
+- [x] Edit form
+- [x] Validation
+- [x] Loading / empty states
+- [x] GitHub repository
+- [x] AI tools + design decisions documented
+- [x] Synthetic data only
 
 ## How to run
 
@@ -42,6 +74,8 @@ src/
   components/              — UI: table, search, form, loader, empty
   data/contacts.ts         — synthetic contacts
   types/contact.ts         — types
+docs/
+  preview.png              — UI screenshot
 ```
 
 ## Design decisions
