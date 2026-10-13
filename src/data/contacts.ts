@@ -1,0 +1,68 @@
+import type { Contact } from "../types/contact";
+
+export const Contacts: Contact[] = [
+  {
+    id: 1,
+    name: "Alex Demo",
+    email: "alex.demo@example.com",
+    phone: "+000-11-22-33-01",
+    company: "Blue Pixel LLC",
+    status: "active",
+  },
+  {
+    id: 2,
+    name: "Sam Testov",
+    email: "sam.testov@example.com",
+    phone: "+000-11-22-33-02",
+    company: "Northwind Mock",
+    status: "lead",
+  },
+  {
+    id: 3,
+    name: "Nina Sample",
+    email: "nina.sample@example.com",
+    phone: "+000-11-22-33-03",
+    company: "Orbit Fake Co",
+    status: "active",
+  },
+  {
+    id: 4,
+    name: "Leo Placeholder",
+    email: "leo.placeholder@example.com",
+    phone: "+000-11-22-33-04",
+    company: "Paper Street Labs",
+    status: "inactive",
+  },
+  {
+    id: 5,
+    name: "Mira Example",
+    email: "mira.example@example.com",
+    phone: "+000-11-22-33-05",
+    company: "Cloud Dummy Inc",
+    status: "lead",
+  },
+  {
+    id: 6,
+    name: "Kai Fiction",
+    email: "kai.fiction@example.com",
+    phone: "+000-11-22-33-06",
+    company: "Zebra Mock Studio",
+    status: "active",
+  },
+  {
+    id: 7,
+    name: "Rita Synthetic",
+    email: "rita.synthetic@example.com",
+    phone: "+000-11-22-33-07",
+    company: "Acme Demo Group",
+    status: "active",
+  },
+  {
+    id: 8,
+    name: "Omar Stub",
+    email: "omar.stub@example.com",
+    phone: "+000-11-22-33-08",
+    company: "Nullsoft Samples",
+    status: "inactive",
+  },
+];
