@@ -1,10 +1,8 @@
 # MACH TECH CRM — Contacts
 
-Адаптивная таблица контактов CRM на React (тестовое задание junior frontend).
+Adaptive CRM contacts table built with React (junior frontend test assignment for MACH TECH).
 
-Adaptive CRM contacts table (React + TypeScript) — test assignment for MACH TECH.
-
-## Стек
+## Stack
 
 - React 19
 - TypeScript
@@ -12,73 +10,73 @@ Adaptive CRM contacts table (React + TypeScript) — test assignment for MACH TE
 - Tailwind CSS 4
 - pnpm
 
-## Возможности
+## Features
 
-- поиск по name / email / company
-- форма редактирования контакта (модальное окно)
-- валидация обязательных полей и email
-- состояние загрузки (Loader)
-- пустое состояние (EmptyState), если ничего не найдено
-- адаптивная вёрстка (мобильный / планшет / десктоп)
-- синтетические демо-данные (не реальные люди)
+- Search by name / email / company
+- Contact edit form (modal)
+- Validation for required fields and email
+- Loading state (Loader)
+- Empty state (EmptyState) when nothing is found
+- Responsive layout (mobile / tablet / desktop)
+- Synthetic demo data (not real people)
 
-## Как запустить
+## How to run
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Сборка:
+Build:
 
 ```bash
 pnpm build
 pnpm preview
 ```
 
-## Структура
+## Structure
 
 ```
 src/
-  pages/ContactsPage.tsx   — логика страницы
-  components/              — UI: таблица, поиск, форма, loader, empty
-  data/contacts.ts         — синтетические контакты
-  types/contact.ts         — типы
+  pages/ContactsPage.tsx   — page logic
+  components/              — UI: table, search, form, loader, empty
+  data/contacts.ts         — synthetic contacts
+  types/contact.ts         — types
 ```
 
-## Принятые решения
+## Design decisions
 
-1. **Состояние списка на странице (`list`)**  
-   Данные из props копируются в `useState`, чтобы после Save таблица обновлялась без бэкенда.
+1. **List state on the page (`list`)**  
+   Initial data from props is copied into `useState` so Save can update the table without a backend.
 
-2. **Поиск через `filter`**  
-   Фильтрация на клиенте по name, email и company; сравнение без учёта регистра.
+2. **Search with `filter`**  
+   Client-side filtering by name, email, and company; case-insensitive comparison.
 
-3. **Локальная копия полей в форме**  
-   При Edit форма хранит свои `useState` для полей. Save отдаёт обновлённый объект наверх; Close отбрасывает черновик.
+3. **Local field copies in the form**  
+   On Edit, the form keeps its own `useState` for fields. Save sends the updated object up; Close discards the draft.
 
-4. **Loading через `useEffect` + `setTimeout`**  
-   Имитация загрузки API на 1 секунду; есть cleanup таймера.
+4. **Loading via `useEffect` + `setTimeout`**  
+   Simulates an API load for 1 second; timer cleanup is included.
 
 5. **EmptyState**  
-   Показывается, когда загрузка закончилась и `filtered` пустой.
+   Shown when loading is finished and `filtered` is empty.
 
-6. **Адаптив**  
-   На мобильном — карточки контактов; на `md+` — таблица. Header и поиск адаптируются по ширине; модалка — bottom sheet на телефоне.
+6. **Responsiveness**  
+   Mobile: contact cards. `md+`: table. Header and search adapt by width; modal is a bottom sheet on phones.
 
-7. **Валидация**  
-   Простая проверка на клиенте: name/phone/company не пустые, email содержит `@`.
+7. **Validation**  
+   Simple client checks: name/phone/company are required; email must contain `@`.
 
-## AI
+## AI usage
 
-Использовался Cursor (AI-ассистент) для:
+Cursor (AI assistant) was used for:
 
-- вёрстки UI и подсказок по Tailwind
-- объяснения React-концепций (state, props, filter)
-- помощи с адаптивностью и README
+- UI layout and Tailwind suggestions
+- Explaining React concepts (state, props, filter)
+- Help with responsiveness and README
 
-Логику поиска, loading/empty, формы, валидации и сохранения разбирал и правил самостоятельно на основе этих объяснений.
+Search, loading/empty, form, validation, and save logic were implemented and refined by me based on those explanations.
 
-## Данные
+## Data
 
-Все контакты вымышленные (`example.com`, тестовые имена и компании). Персональные данные реальных клиентов не использовались.
+All contacts are fictional (`example.com`, demo names and companies). No real customer personal data was used.
